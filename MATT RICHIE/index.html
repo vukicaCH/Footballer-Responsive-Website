@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class='logo'>
+            <h3><span class='letter'>M</span><span class='diss-text'>att</span> <span class='letter'>R</span><span class="diss-text">itchie</span></h3>
+        </div>
+        <div class='navbar'>
+            <ul class="nav-list">
+                <li class="nav-item"><i class="nav-link fas fa-times"></i></li>
+                <li class="nav-item"><a href="" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Career Stats</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Signed Shirt</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="close-button">
+            <a class="nav-link"><i class="fas fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-text">
+                <div class="welcome-text-headers">
+                    <h1>Matt Ritchie</h1>
+                    <h2>Proffesional Footballer</h2>
+                </div>
+                <a href="" class='btn'>About me</a>
+            </div>
+            <div class="images">
+                <img src="images/richie.png" alt="">
+                <img src="images/580b57fcd9996e24bc43c4ec.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="column left">
+                <img src="images/richi-signs.jpg" alt="">
+            </div>
+            <div class="column right">
+                <h2>About <span>me</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo soluta temporibus tenetur facilis harum in corporis, repellendus quas,
+                at accusamus dolores! Ut at illo eum non, soluta perspiciatis odio animi tempore,
+                quas ex commodi minima voluptatem quaerat ea, maxime accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo soluta temporibus tenetur facilis harum in corporis, repellendus quas,
+                at accusamus dolores! Ut at illo eum non, soluta perspiciatis odio animi tempore,
+                quas ex commodi minima voluptatem quaerat ea, maxime accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="career">
+        <div class="port-career">
+            <div class="portsmouth">
+                <div class="stats">
+                    <img src="images/port-logo.png" alt="">
+                    <h4>Portsmouth</h4>
+                    <h5>Games: 7</h5>
+                    <h5>Goals: 0</h5>
+                </div>
+            </div>
+        </div>
+        <div class="swindon-career">
+            <div class="swindon">
+                <div class="stats">
+                    <img src="images/swindon-logo.png" alt="">
+                    <div class="stats-numbers">
+                        <h4>Swindon</h4>
+                        <h5>Games: 91</h5>
+                        <h5>Goals: 23</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bournemouth-career">
+            <div class="bournemouth">
+                <div class="stats">
+                    <img src="images/bor-logo.png" alt="">
+                    <h4>bournemouth</h4>
+                    <h5>Games: 130</h5>
+                    <h5>Goals: 31</h5>
+                </div>
+            </div>
+        </div>
+        <div class="newcastle-career">
+            <div class="newcastle">
+                <div class="stats">
+                    <img src="images/580b57fcd9996e24bc43c4ec.png" alt="">
+                    <h4>Newcastle</h4>
+                    <h5>Games: 132</h5>
+                    <h5>Goals: 19</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-shirt">
+        <div class="container">
+            <div class="shirt-sign">
+                <div class="column left">
+                    <img src="images/richi-dres.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <h1>sign your shirt</h1>
+                    <p>You have my shirt and want to get a signature on it?Contact me!</p>
+                    <a href="#" class='btn'>Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-form-image">
+                <div class="column left">
+                    <h1>Contact me</h1>
+                    <p>Feel free to send some messages.</p>
+                    <form action="">
+                        <input type="text" placeholder='Your Full Name'>
+                        <input type="email" placeholder='Your Email'>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type='submit' value='SEND'>
+                    </form>
+                </div>
+                <div class="column right">
+                    <img src="images/richi-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+let nav = document.querySelector('nav');
+let navLinks = document.querySelectorAll('.nav-link');
+let headerSpans = document.querySelectorAll('.diss-text');
+let closeButton = document.querySelector('.close-button .nav-link i');
+
+var bodyWidth = document.body.clientWidth;
+
+window.addEventListener('resize', () => {
+    bodyWidth = document.body.clientWidth;
+
+    autoCloseNav();
+})
+
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 0){
+       nav.style.top = '0px';
+       nav.style.left = '0px';
+       nav.style.width = '100%';
+       nav.style.backgroundColor = 'white';
+       for(let link of navLinks){
+           link.style.color = 'black';
+       }
+
+       for(let span of headerSpans){
+           span.style.display = 'none';
+       }
+
+       closeButton.style.color = 'black';
+    }else{
+        nav.style.top = '0';
+        nav.style.left = '0';
+        nav.style.width = '100%';
+        nav.style.backgroundColor = 'black';
+        for(let link of navLinks){
+            link.style.color = 'white';
+        }
+        for(let span of headerSpans){
+            span.style.display = 'inline';
+        }
+        closeButton.style.color = 'white';
+    }
+
+    if(bodyWidth < 800){
+        for(let link of navLinks){
+           link.style.color = 'white';
+       }
+    }
+
+})
+
+
+var close = document.querySelector('i.nav-link');
+var navList = document.querySelector('nav .nav-list');
+
+close.addEventListener('click', () =>{
+    navList.style.left = '-100%';
+});
+
+closeButton.addEventListener('click',() => {
+    navList.style.left = '0%';
+})
+
+function autoCloseNav(){
+    if(bodyWidth > 800){
+
+        navList.style.left = '-100%';
+
+    }
+
+};
+
+</script>
+</body>
+</html>

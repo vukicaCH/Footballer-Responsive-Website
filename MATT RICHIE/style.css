@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 13vh;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 999;
+    transition: 0.5s ease;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+
+.logo h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.logo h3 .letter {
+    font-size: 60px;
+    color: black;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+}
+
+
+.navbar {
+    flex: 1;
+}
+
+.navbar .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-list .nav-item {
+    margin-right: 40px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
+i.nav-link {
+    display: none;
+    cursor: pointer;
+}
+
+.close-button {
+    display: none;
+    cursor: pointer;
+}
+
+/*container rules*/
+
+.container {
+    width: 100%;
+    padding: 0 100px;
+
+}
+
+
+
+/*section welcome*/
+
+.welcome {
+    height: 75vh;
+    width: 90%;
+    margin-left: 65px;
+    margin-right: 55px;
+    margin-top: 170px;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
+.welcome .container {
+    display: flex;
+}
+
+.welcome .container .welcome-text {
+    flex: 1;
+}
+
+.welcome .container .images {
+    flex: 1;
+    display: flex;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.welcome .container .images img:first-child {
+    width: 90%;
+    margin: 0 50px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome .container .images img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    opacity: 0.4;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.welcome .container .welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.welcome .container .welcome-text h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    background: black;
+    color: white;
+
+}
+
+
+.welcome .container .welcome-text h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+}
+
+.welcome .container .welcome-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    background: black;
+    color: white;
+    font-size: 25px;
+    box-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    transition: background 0.3s ease;
+
+}
+
+.welcome .container .welcome-text .btn:hover {
+    background: white;
+    color: black;
+    box-shadow:
+        -1px -1px 0 #111,
+        1px -1px 0 #111,
+        -1px 1px 0 #111,
+        1px 1px 0 #111;
+}
+
+/*about me*/
+
+.about {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: black;
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .container .column {
+    flex: 1;
+    color: white;
+    margin: 0 20px;
+}
+
+.about .container .column img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 10px 10px 0px white;
+
+}
+
+.about .container .column.right h2 {
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: white;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #111,
+        1px -1px 0 #111,
+        -1px 1px 0 #111,
+        1px 1px 0 #111;
+}
+
+
+.about .container .column.right p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    font-size: 23px;
+}
+
+/*carrer*/
+
+.career {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+}
+
+.port-career,
+.swindon-career,
+.bournemouth-career,
+.newcastle-career {
+    flex: 1;
+    overflow: hidden;
+}
+
+.portsmouth {
+    width: 100%;
+    height: 100%;
+    background: url('images/Screenshot_1.png') top no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.portsmouth .stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.portsmouth .stats img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.portsmouth .stats h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.portsmouth .stats h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.portsmouth:hover {
+    transform: scale(1.2);
+}
+
+
+.swindon {
+    width: 100%;
+    height: 100%;
+    background: url('images/richi-swindon.jpg') center no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.swindon .stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.swindon .stats img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.swindon .stats h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.swindon .stats h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.swindon:hover {
+    transform: scale(1.2);
+}
+
+.bournemouth {
+    width: 100%;
+    height: 100%;
+    background: url('images/richi-bor.jpg') top no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.bournemouth .stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bournemouth .stats img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.bournemouth .stats h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.bournemouth .stats h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.bournemouth:hover {
+    transform: scale(1.2);
+}
+
+.newcastle {
+    width: 100%;
+    height: 100%;
+    background: url('images/richi-nufc.jpg') center no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.newcastle .stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.newcastle .stats img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.newcastle .stats h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.newcastle .stats h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.newcastle:hover {
+    transform: scale(1.2);
+}
+
+
+/*sign-shirt*/
+
+.sign-shirt {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.shirt-sign {
+    width: 100%;
+    display: flex;
+}
+
+.shirt-sign .column {
+    flex: 1;
+}
+
+.shirt-sign .column.left img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.shirt-sign .column.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.shirt-sign .column.right h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shirt-sign .column.right p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    background: black;
+    color: white;
+    font-size: 25px;
+    box-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    transition: background 0.3s ease;
+}
+
+/*contact*/
+
+.contact {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.contact-form-image {
+    display: flex;
+}
+
+.contact-form-image .column {
+    flex: 1;
+}
+
+.contact-form-image .column.left {
+    padding: 90px 0;
+}
+
+.contact-form-image .column.left h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.contact-form-image .column.left p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.5),
+        1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px 1px 0 rgba(0, 0, 0, 0.5),
+        1px 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: transparent;
+}
+
+textarea {
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.5),
+        1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px 1px 0 rgba(0, 0, 0, 0.5),
+        1px 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    resize: none;
+}
+
+textarea:focus {
+    outline: transparent;
+}
+
+input[type='submit'] {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    background: black;
+    color: white;
+    font-size: 25px;
+    box-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    transition: background 0.3s ease;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1160px) {
+
+
+    .welcome .container .welcome-text h1 {
+        font-size: 60px;
+    }
+
+    .about {
+        height: auto;
+    }
+
+
+    .about .column.right {
+        order: 1;
+    }
+
+    .about .column.left {
+        order: 2;
+    }
+
+    .about .container .column.right h2 {
+        font-size: 40px;
+    }
+
+    .about .container .column.right p {
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .about .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .container .column.left {
+        width: 70%;
+        margin: 0 auto 50px auto;
+    }
+
+    .about .container .column.right {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .logo h3 {
+        font-size: 25px;
+    }
+
+    .logo h3 .letter {
+        font-size: 40px;
+    }
+
+    .navbar .nav-list .nav-item {
+        font-size: 2vw;
+    }
+
+    .welcome {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: url('images/richie.png') top no-repeat;
+        border-radius: 100%;
+        margin: 150px auto;
+        position: relative;
+        padding: 0;
+    }
+
+    .welcome .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .welcome .container .welcome-text {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+    }
+
+    .welcome .container .welcome-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .welcome .container .welcome-text-headers {
+        padding: 0 20px;
+        background: black;
+    }
+
+    .welcome .container .welcome-text .btn {
+        margin-top: 10px;
+    }
+
+    .welcome .container .welcome-text h1 {
+        font-size: 50px;
+        text-shadow:
+            -1px -1px 0 #111,
+            1px -1px 0 #111,
+            -1px 1px 0 #111,
+            1px 1px 0 #111;
+    }
+
+    .welcome .container .welcome-text h2 {
+        font-size: 40px;
+        color: white;
+        background-color: black;
+        text-shadow:
+            -1px -1px 0 #111,
+            1px -1px 0 #111,
+            -1px 1px 0 #111,
+            1px 1px 0 #111;
+
+    }
+
+    .welcome .container .images {
+        display: none;
+    }
+
+    .contact .container .column.right {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        padding: 20px 0;
+    }
+
+    nav .nav-list {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-list .nav-item {
+        margin: 40px 0;
+    }
+
+    nav .nav-list .nav-item .nav-link {
+        color: white;
+        font-size: 30px;
+    }
+
+    i.nav-link {
+        display: initial;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px !important;
+    }
+
+    .close-button {
+        display: initial;
+        position: relative;
+        font-size: 25px;
+        right: 10%;
+
+    }
+
+    .welcome .container .welcome-text h1 {
+        font-size: 50px;
+    }
+
+    .welcome .container .welcome-text h2 {
+        font-size: 40px;
+    }
+
+    .career .stats h4 {
+        font-size: 3vw;
+    }
+
+    .career .stats h5 {
+        font-size: 2vw;
+    }
+
+    .about .container {
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .welcome .container .welcome-text h1 {
+        font-size: 8vw;
+    }
+
+    .welcome .container .welcome-text h2 {
+        font-size: 5vw;
+    }
+
+    .about .container .column.right p {
+        font-size: 4vw;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .shirt-sign .column.left {
+        display: none;
+    }
+
+    .shirt-sign .column.right {
+        display: flex;
+    }
+
+
+    .contact .container {
+        padding: 0;
+    }
+
+    .contact .container .contact-form-image form {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .welcome .container {
+        padding: 0;
+    }
+
+    .welcome .container .welcome-text h1 {
+        font-size: 13vw;
+        margin: 10px 0;
+    }
+
+    .welcome .container .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .career {
+        height: initial;
+        flex-direction: column;
+    }
+
+    .portsmouth .stats {
+        padding: 100px 0;
+    }
+
+    .portsmouth .stats h4 {
+        font-size: 10vw;
+    }
+
+    .portsmouth .stats h5 {
+        font-size: 8vw;
+    }
+
+    .swindon .stats {
+        padding: 100px 0;
+    }
+
+    .swindon .stats h4 {
+        font-size: 10vw;
+    }
+
+    .swindon .stats h5 {
+        font-size: 8vw;
+    }
+
+    .bournemouth .stats {
+        padding: 100px 0;
+    }
+
+    .bournemouth .stats h4 {
+        font-size: 10vw;
+    }
+
+    .bournemouth .stats h5 {
+        font-size: 8vw;
+    }
+
+    .newcastle .stats {
+        padding: 100px 0;
+    }
+
+    .newcastle .stats h4 {
+        font-size: 10vw;
+    }
+
+    .newcastle .stats h5 {
+        font-size: 8vw;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo h3 {
+        font-size: 6vw;
+        line-height: 10px;
+    }
+
+
+    .welcome .welcome-text {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .welcome .welcome-text h2 {
+        display: none;
+    }
+
+    .welcome .welcome-text .btn {
+        margin-top: 0;
+    }
+
+    .about {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .about .container {
+        width: 100%;
+    }
+
+    .about .container .column.right h2 {
+        font-size: 10vw;
+    }
+
+    .about .container .column.right p {
+        font-size: 4vw;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    input,
+    textarea {
+
+        font-size: 15px;
+
+    }
+
+    .contact-form-image .column.left h1 {
+        font-size: 40px;
+    }
+
+    .contact-form-image .column.left p {
+        font-size: 5vw;
+    }
+
+
+    input,
+    textarea {
+        padding: 20px 3px;
+    }
+
+}
