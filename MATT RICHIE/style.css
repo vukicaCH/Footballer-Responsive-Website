@@ -516,6 +516,7 @@ i.nav-link {
 .contact {
     width: 100%;
     padding-top: 100px;
+    position: relative;
 }
 
 .contact-form-image {
@@ -605,18 +606,6 @@ input[type='submit'] {
     transition: background 0.3s ease;
 }
 
-.footer-place {
-    position: relative;
-}
-
-footer {
-    padding: 1rem;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 /*media query*/
 
