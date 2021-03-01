@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -99,6 +103,7 @@ i.nav-link {
 .close-button {
     display: none;
     cursor: pointer;
+    color: #fff;
 }
 
 /*container rules*/
@@ -598,6 +603,19 @@ input[type='submit'] {
         -1px 1px 0 #fff,
         1px 1px 0 #fff;
     transition: background 0.3s ease;
+}
+
+.footer-place {
+    position: relative;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*media query*/

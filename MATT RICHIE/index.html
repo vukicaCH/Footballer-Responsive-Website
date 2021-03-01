@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,14 +16,14 @@
         <div class='navbar'>
             <ul class="nav-list">
                 <li class="nav-item"><i class="nav-link fas fa-times"></i></li>
-                <li class="nav-item"><a href="" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Career Stats</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Signed Shirt</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#aboutme" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#careerstats" class="nav-link">Career Stats</a></li>
+                <li class="nav-item"><a href="#signedshirt" class="nav-link">Signed Shirt</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
         <div class="close-button">
-            <a class="nav-link"><i class="fas fa-bars"></i></a>
+            <a class="nav-open"><i class="fas fa-bars"></i></a>
         </div>
     </nav>
 
@@ -42,7 +43,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id='aboutme'>
         <div class="container">
             <div class="column left">
                 <img src="images/richi-signs.jpg" alt="">
@@ -63,7 +64,7 @@
         </div>
     </section>
 
-    <section class="career">
+    <section class="career" id='careerstats'>
         <div class="port-career">
             <div class="portsmouth">
                 <div class="stats">
@@ -108,7 +109,7 @@
         </div>
     </section>
 
-    <section class="sign-shirt">
+    <section class="sign-shirt" id='signedshirt'>
         <div class="container">
             <div class="shirt-sign">
                 <div class="column left">
@@ -122,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id='contact'>
         <div class="container">
             <div class="contact-form-image">
                 <div class="column left">
@@ -142,11 +143,17 @@
         </div>
     </section>
 
+    <div class="footer-place">
+        <footer>
+            <span>Vuk Trifunovic Web Developer 2020 <a href="https://www.linkedin.com/in/vuk-trifunović" target='_blank'><i class='bx bxl-linkedin'></i></a></span>
+        </footer>
+    </div>
+
 <script>
 let nav = document.querySelector('nav');
 let navLinks = document.querySelectorAll('.nav-link');
 let headerSpans = document.querySelectorAll('.diss-text');
-let closeButton = document.querySelector('.close-button .nav-link i');
+let closeButton = document.querySelector('.close-button .nav-open i');
 
 var bodyWidth = document.body.clientWidth;
 
@@ -214,6 +221,10 @@ function autoCloseNav(){
     }
 
 };
+
+navLinks.forEach(navLink => navLink.addEventListener('click', function(){
+    navList.style.left = '-100%';
+}))
 
 </script>
 </body>
